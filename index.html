@@ -4,21 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>WWW</title>
-    <style>
-      header {
-        text-align: center;
-        background-color: rgb(14, 6, 6);
-        color: rgb(165, 172, 44);
-        padding: 14px;
-        font-size: 120%;
-      }
-      main {
-        font-size: 105%;
-        padding-left: 300px;
-        padding-right: 300px;
-      }
-    </style>
   </head>
 
   <body>
@@ -26,7 +13,7 @@
       <h1>World Wide Web</h1>
     </header>
     <main>
-      <h2>Vznik WWW a principy</h2>
+      <h2> Vznik WWW a principy <hr></h2>
 
       <p>
         <strong> World Wide Web </strong> (WWW, také pouze zkráceně web), ve
@@ -63,6 +50,138 @@
         konsorcium jehož členové společně s veřejností vyvíjejí webové standardy
         pro WWW. Konsorciu předsedá Tim Berners-Lee.
       </p>
+      <h2>Otázky a odpovědi</h2>
+      <div class="otazka">
+        1. Jakou roli plní webový server? Uveďte příklady webových serverů.
+      </div>
+      <div class="odpoved">
+        <p>
+          Server je bezobslužný program, který přijímá a obsluhuje požadavky
+          klientů. Webový server je připojen k počítačové síti a přijímá
+          požadavky v souladu s protokolem HTTTP. Tyto požadavky vyřizuje a
+          počítači, který požadavek vznesl, vrací odpověd
+        </p>
+        <p><strong>Příklady webových serverů</strong></p>
+        <ul>
+          <li>Apache</li>
+          <li>NGINX</li>
+          <li>Microsoft Internet Information Server</li>
+        </ul>
+      </div>
+      <div class="otazka">
+        2. Jak se nazývá program označovaný jakowebový klient? Co je jeho
+        úkolem? Vyjmenujte nejpoužívanější webové klienty.
+      </div>
+      <div class="odpoved">
+        <p>
+          Klient (browser, prohlížeč) je program, který komunikuje s uživatelem
+          a na základě jeho pokynů se obrací na jednotlivé servery, získává od
+          nich data a zobrazuje je.
+        </p>
+        <p><strong>Příklady webových klientů</strong></p>
+        <ul>
+          <li>Mozilla Firefox</li>
+          <li>Google Chrome</li>
+          <li>Safari</li>
+          <li>Opera</li>
+          <li>Microsft Edge</li>
+        </ul>
+      </div>
+      <div class="otazka">
+        3. Jak probíhá komunikace mezi webovým klientem a webovým serverem?
+      </div>
+      <div class="odpoved">
+        <p>
+          Základem služby WWW je komunikace mezi webovým klientem a webovým
+          serverem pomocí protokolu HTTP. Při jejich spolupráci fungují
+          následující mechanismy:
+        </p>
+        <ul>
+          <li>
+            komunikační protokol HTTP, pomocí něhož WWW klient a WWW server
+            komunikují
+          </li>
+          <li>
+            Jazyk HTML definující formát WWW stránek, které server vrací
+            klientovi
+          </li>
+        </ul>
+      </div>
+      <div class="otazka">4. Co je HTTP</div>
+      <div class="odpoved">
+        <p>
+          <abbr title="Hypertext Transfer Protocol">HTTP</abbr> je internetový
+          protokol určený pro komunikaci s WWW servery. Slouží pro přenos
+          hypertextových dokumentů ve formátu HTML, XML, i jiných typů souborů.
+        </p>
+      </div>
+      <div class="otazka">5. Vypište do tabulky stavové kódy HTTP</div>
+      <div class="odpoved">
+
+        <table>
+          <tr>
+            <th>1xx</th>
+            <th>2xx</th>
+            <th>3xx</th>
+            <th>4xx</th>
+            <th>5xx</th>
+          </tr>
+          <tr>
+            <td>informační zpráva</td>
+            <td>úspěšně vyřízení požadavku</td>
+            <td>problémy spojené s přesměrováním</td>
+            <td>chyby související s vyřízením požadavku (stránka není dostupná, apod.)</td>
+            <td>interní chyby serveru</td>
+          </tr>
+
+        </table>
+
+      </div>
+      <div class="otazka">6.Proč se stále častěji využívá protokol HTTPS?</div>
+      <div class="odpoved"><p><abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr> 
+        je nadstavba protokolu HTTP, která poskytuje zvýšenou bezpečnost před odposloucháváním
+         či podvržením dat. Standardní port na straně serveru je 443 TCP.</p>
+        </div>
+      <div class="otazka">
+        7. Vysvětlete zkratku URL a připojte pět různých příkladů URL odkazů.
+      </div>
+      <div class="odpoved">
+        <p>
+          <abbr title="Uniform Resource Locator">URL</abbr>, běžně webová adresa
+          je řetězec znaků, který slouží k přesné specifikaci umístění zdrojů
+          informací na Internetu. Nejběžnějším zdrojem je webová stránka
+        </p>
+      </div>
+      <div class="otazka">
+        8. Co jsou a k čemu slouží tzv. cookies? Připojte obrázek ukazující
+        uložená cookies k některé internetové stránce.
+      </div>
+      <div class="odpoved">
+        <p>
+          Cookie je krátký textový soubor, který si navštívený web ukládá ve
+          vašem prohlížeči. Umožňuje webu zaznamenat informace o vaší návštěvě.
+          Přiští návštěva tak pro váš může být snazší a web bude užitečnější.
+        </p>
+        <img src="css/cookie.png" alt="">
+      </div>
+      <div class="otazka">
+        9. Vypište přehledně jednotlivé fáze fungování internetových
+        vyhledávačů.
+      </div>
+      <div class="odpoved"><p>Principiálně vyhledávače fungují ve třech krocích:
+        <ul>
+          <li>procházení webových stránek</li>
+          <li>indexace (příprava indexu)</li>
+          <li>poskytování odpovědi na dotazy</li>
+        </ul>
+      </p></div>
+      <div class="otazka">10.Vysvětlete zkratku HTMLa pojem hypertext.</div>
+      <div class="odpoved"><p><abbr title="Hyper Text Markup Language"><strong>HTML</strong></abbr> je zkratka pro hypertextový značkovací jazyk,
+        který se používá k vytváření obsahu webové stránky. Obsah webové stránky mohou tvořit texty, obrázky, tabulky, multimédia a další prvky.
+       Webové stránky jsou mezi sebou vzájemně propojeny pomocí hypertextových odkazů.</p>
+      <p><strong>Hypertext</strong> je způsob strukturování textu, který není lineární. Obsahuje tzv. hyperlinky neboli česky (hypertextové) odkazy.
+        Rovněž odkazuje i na jiné informace v systému a umožňuje snadné publikování, údržbu a vyhledávání těchto informací.</p>
+      </div>
     </main>
     <footer>
       <hr />
